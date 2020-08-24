@@ -3,7 +3,9 @@ This Spring Boot microservice finds out if two cities are connected.
 
 #### Prerequisites:
   Java 8 
+  
   Maven 3.6
+  
   Postman or any REST client for Testing.
     
 #### Local Setup
