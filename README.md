@@ -1,5 +1,32 @@
 # CityConnectFinder
-This Spring Boot microservice finds out if two cities are connected.
+This Spring Boot microservice finds out if two cities are connected. List of roads is available in city.txt file and is located under src/main/resources. It has the below content:
+   
+   
+    Boston, New York
+    Philadelphia,Newark
+    Newark,Boston
+    Trenton,Albany
+    Washington,Philadelphia
+    Austin,Washington
+    Richmond,Plano
+    Baltimore,Orlando
+    Orlando,Austin
+    
+ The above city pairs indicates that there is a road between those cities. This Spring Boot microservice exposes an endpoint:
+   
+   http://localhost:8080/connected?origin=city1&destination=city2
+   
+  This endpoint will respond with 'yes' if city1 is connected to city2, 'no' if city1 is not connected with city2. Any unexpected input will result in a 'no' response.
+  
+  Examples:
+  
+  http://localhost:8080/connected?origin=Boston&destination=Philadelphia
+  
+  should return 'yes' since these cities are connected as 'Boston -> Newark -> Philadelphia'
+  
+  http://localhost:8080/connected?origin=Richmond&destination=Orlando
+  
+  should return 'no' as there is no connectivity between these two cities
 
 #### Prerequisites:
   Java 8 
