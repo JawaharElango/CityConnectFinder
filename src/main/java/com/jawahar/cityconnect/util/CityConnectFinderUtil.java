@@ -47,7 +47,7 @@ public class CityConnectFinderUtil {
         return new LinkedList<String>(adjacentCities);
     }
 
-    public  boolean checkIfCitiesConnected(List<CityPathPair> cityPathPairList, String inputOrigin, String inputDestination)
+    public boolean checkIfCitiesConnected(List<CityPathPair> cityPathPairList, String inputOrigin, String inputDestination)
     {
         CityConnectFinderUtil graph = new CityConnectFinderUtil();
         CityConnectFinderUtil.connected = false;
