@@ -1,0 +1,9 @@
+Boston,New York
+Philadelphia,Newark
+Newark,Boston
+Trenton,Albany
+Washington,Philadelphia
+Austin,Washington
+Richmond,Plano
+Baltimore,Orlando
+Orlando,Austin
