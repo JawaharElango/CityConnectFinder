@@ -11,6 +11,7 @@ This Spring Boot microservice finds out if two cities are connected.
 #### Local Setup
 
    git clone https://github.com/jawaharsp/CityConnectFinder
+   
    Navigate to the location in terminal and start the embedded tomcat server using mvn spring-boot:run
 
 ### Testing
